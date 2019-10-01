@@ -30,6 +30,15 @@ https://gitlab.local
 
 This gitlab instance could easily be exposed to the outside web, but that configuration is outside the scope of this repo.
 
+
+#### Notes on this Setup
+
+The CI runner in this repo is configured so...
+
+ - Each job is run in a `docker` container.
+ - The VM's `docker` socket is mounted in every job, making `docker` available for use inside the job's container.
+ - It can run up to 4 jobs concurrently.
+
 ## Get Started
 
 #### Install Prerequisites
@@ -84,14 +93,6 @@ $ ./start-runner.sh MY_REGISTRATION_TOKEN
 ```
 
 (of course, replace `MY_REGISTRATION_TOKEN` with your registration token.)
-
-#### Notes on the CI Runner Configuration
-
-The CI runner in this repo is configured so...
-
- - Each job is run in a `docker` container.
- - The VM's `docker` socket is mounted in every job, making `docker` available for use inside the job's container.
- - It can run up to 4 jobs concurrently.
 
 #### Test the CI
 
