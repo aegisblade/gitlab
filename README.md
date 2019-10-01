@@ -12,7 +12,7 @@
   </p>
 
   <p align="center">
-    Single machine gitlab site & CI setup in code.
+    Single machine Gitlab site & CI setup in code.
     <br />
     <a href="https://www.aegisblade.com/docs"><strong>Read the docs »</strong></a>
     <br />
