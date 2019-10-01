@@ -67,6 +67,8 @@ Gitlab will take a minute or so to boot up, then navigate to `https://gitlab.loc
 
 #### Setup a User and a Project
 
+After navigating to `https://gitlab.local` ...
+
  - Accept the self-signed certificate warning.
  - Set an Admin Password.
  - Register a new user for yourself.
@@ -77,7 +79,7 @@ We recommend setting up a group rather than a project directly so the runner can
 
 #### Obtain the Registration Token
 
-[Find the registration token]() for the group/project you created and copy it to your clipboard.
+[Find the registration token](https://docs.gitlab.com/ee/ci/runners/) for the group/project you created and copy it to your clipboard.
 
 #### Start the CI Runner
 
@@ -91,11 +93,11 @@ $ ./start-runner.sh MY_REGISTRATION_TOKEN
 
 #### Notes on the CI Runner Configuration
 
-The CI runner in this repo is configured to mount the virtual machines `docker` socket, which makes `docker` available to be used by jobs in the CI.
+The CI runner in this repo is configured so...
 
-A side effect of this is that every job has elevated privileges on the VM.
-
-This is likely not an issue for most use-cases.
+ - Each job is run in a `docker` container.
+ - The VM's `docker` socket is mounted in every job, making `docker` available for use inside the job's container.
+ - It can run up to 4 jobs concurrently.
 
 #### Test the CI
 
