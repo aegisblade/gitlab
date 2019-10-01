@@ -6,12 +6,6 @@
   <h3 align="center">AegisBlade Gitlab Setup</h3>
 
   <p align="center">
-    <img src="https://img.shields.io/pypi/v/aegisblade" alt="pypi version" />
-    <img src="https://img.shields.io/pypi/pyversions/aegisblade" alt="supported python versions" />
-    <img src="https://img.shields.io/github/license/aegisblade/aegis-python" alt="license">
-  </p>
-
-  <p align="center">
     Single machine Gitlab site & CI setup in code.
     <br />
     <a href="https://www.aegisblade.com/docs"><strong>Read the docs »</strong></a>
