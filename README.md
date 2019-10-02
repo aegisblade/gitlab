@@ -17,6 +17,8 @@
     ·
     <a href="https://github.com/aegisblade/gitlab/issues">Report Bug</a>
   </p>
+
+  <img src="./img/terminal.png">
 </p>
 
 ## Overview
